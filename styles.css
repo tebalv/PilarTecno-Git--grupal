@@ -54,7 +54,7 @@ textarea {
     padding: 10px;
     background-color: #007bff;
     color: white;
-    border: none;
+    border: 2000px solid salmon;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
