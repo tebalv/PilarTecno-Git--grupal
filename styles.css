@@ -35,6 +35,7 @@ label {
 input[type="text"],
 input[type="tel"],
 input[type="email"],
+input[type="reset"],
 textarea {
     width: 100%;
     padding: 10px;
