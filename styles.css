@@ -1,112 +1,67 @@
-/* Estilos generales para el body */
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5; /* Color de fondo gris claro */
-    color: #333; /* Color de texto gris oscuro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Asegura que el contenido esté centrado verticalmente */
 }
 
-/* Estilos para el contenedor del formulario */
 .form-container {
-    background-color: #fff; /* Fondo blanco para el contenedor */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    padding: 20px;
     width: 100%;
-    max-width: 500px; /* Ancho máximo para el contenedor */
-    opacity: 0; /* Inicialmente oculto para la transición */
-    transition: opacity 0.5s ease; /* Transición suave */
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-container.show {
-    opacity: 1; /* Mostrar el contenedor cuando se aplica la clase 'show' */
-}
-
-/* Estilos para los encabezados */
 h2 {
-    margin-top: 0;
-    color: #222; /* Color del encabezado gris oscuro */
-    text-align: center; /* Centrando el texto */
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-/* Estilos para los grupos de formulario */
 .form-group {
-    margin-bottom: 20px; /* Espacio entre grupos de formulario */
+    margin-bottom: 15px;
 }
 
-/* Estilos para las etiquetas */
 label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #555; /* Color gris medio para las etiquetas */
+    color: #333;
 }
 
-/* Estilos para los campos de entrada */
 input[type="text"],
 input[type="tel"],
 input[type="email"],
+input[type="reset"],
 textarea {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
+    width: 100%;
     padding: 10px;
-    border: 1px solid #ddd; /* Borde gris claro */
-    border-radius: 4px; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
     font-size: 16px;
-    background-color: #f9f9f9; /* Fondo ligeramente gris */
 }
 
-/* Estilos para el botón de enviar y borrar */
+textarea {
+    resize: vertical;
+}
+
 .btn {
-    background-color: #007BFF; /* Color de fondo azul */
-    color: #fff; /* Color del texto blanco */
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
     display: inline-block;
-    text-decoration: none;
-    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: 2000px solid salmon;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #0056b3; /* Color de fondo azul oscuro en hover */
-}
-
-/* Estilo para el botón de reset */
-input[type="reset"] {
-    background-color: #6c757d; /* Color de fondo gris */
-    color: #fff; /* Color del texto blanco */
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
-    display: inline-block;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-input[type="reset"]:hover {
-    background-color: #5a6268; /* Color de fondo gris oscuro en hover */
-}
-
-/* Mensaje de éxito */
-.success-message {
-    background-color: #28a745; /* Color verde para éxito */
-    color: #fff;
-    padding: 15px;
-    border-radius: 4px;
-    text-align: center;
-    margin-top: 20px;
-    opacity: 1;
-    transition: opacity 0.5s ease;
+    background-color: #0056b3;
 }
